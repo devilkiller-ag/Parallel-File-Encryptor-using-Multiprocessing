@@ -49,4 +49,4 @@ struct Task {
 };
 
 
-#endif TASK_HPP
+#endif // TASK_HPP

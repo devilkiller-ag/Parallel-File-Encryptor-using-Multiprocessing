@@ -18,4 +18,4 @@ private:
 };
 
 
-#endif PROCESS_MANAGEMENT_HPP
+#endif // PROCESS_MANAGEMENT_HPP

@@ -31,4 +31,6 @@ int executeCryption(const std::string &taskData) {
         }
         task.f_stream.close();
     }
+
+    return 0;
 }

@@ -4,3 +4,14 @@
 
 # Ignore all executable files
 **/*.exe
+
+# Ignore all object files and libraries
+**/*.obj
+**/*.o
+**/*.a
+**/*.lib
+
+
+# Ignore all linux executables
+cryption
+encrypt_decrypt

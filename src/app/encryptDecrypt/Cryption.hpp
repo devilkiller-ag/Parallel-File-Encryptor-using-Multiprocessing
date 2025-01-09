@@ -8,4 +8,4 @@
 int executeCryption(const std::string &taskData);
 
 
-#endif CRYPTION_HPP
+#endif // CRYPTION_HPP
