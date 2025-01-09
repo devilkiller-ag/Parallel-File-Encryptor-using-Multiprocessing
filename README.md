@@ -4,6 +4,20 @@
 ## Prerequisite to run the project
 Create a `.env` file having your `encryption_key` in the project root directory.
 
+## How to run the project?
+To run the whole project run these commands in your terminal:
+1. `make clean` to clean the project.
+2. `make` to build the project.
+3. Run `./encrypt_decrypt` to encrypt and decrypt the file.
+    - It will ask the directory of the files to encrypt/decrypt.
+    - It will then ask task to perform (ENCRYPT/DECRYPT).
+
+To run the standalone cryption program run these commands in your terminal:
+1. `make clean` to clean the project.
+2. `make cryption` to build the project.
+3. Run `./cryption your_task_data_here` to encrypt/decrypt the data.
+    - It will ask the task to perform (ENCRYPT/DECRYPT).
+
 
 ### Prerequisite to debug in VS Code
 
