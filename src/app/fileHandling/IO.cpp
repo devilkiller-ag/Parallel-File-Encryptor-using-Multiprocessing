@@ -1,6 +1,8 @@
 #include "IO.hpp"
+
 #include <iostream>
 #include <fstream>
+
 
 IO::IO(const std::string &file_path) {
     file_stream.open(file_path, std::ios::in | std::ios::out | std::ios::binary);
@@ -9,9 +11,11 @@ IO::IO(const std::string &file_path) {
     }
 }
 
+
 std::fstream IO::getFileStream() {
     return std::move(file_stream);
 }
+
 
 IO::~IO() {
     if(file_stream.is_open()) {
