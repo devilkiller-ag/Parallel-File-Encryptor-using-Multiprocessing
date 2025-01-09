@@ -15,3 +15,7 @@
 # Ignore all linux executables
 cryption
 encrypt_decrypt
+
+
+# Ignore the environment file
+.env
