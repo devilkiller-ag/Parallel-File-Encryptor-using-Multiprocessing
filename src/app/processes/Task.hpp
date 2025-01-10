@@ -5,6 +5,7 @@
 #include <string>
 #include <sstream>
 #include <iostream>
+
 #include "../fileHandling/IO.hpp"
 
 
@@ -21,7 +22,7 @@ struct Task {
 
     Task(std::fstream &&stream, Action act, std::string filePath): f_stream(std::move(stream)), action(act), filePath(filePath) {}
 
-    std::string toString() {
+    std::string toString() const {
         std::ostringstream oss;
         oss << filePath << "," << (action==Action::ENCRYPT ? "ENCRYPT" : "DECRYPT");
         return oss.str();

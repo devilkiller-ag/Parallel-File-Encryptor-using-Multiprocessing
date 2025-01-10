@@ -1,7 +1,7 @@
-#include "IO.hpp"
-
-#include <iostream>
 #include <fstream>
+#include <iostream>
+
+#include "IO.hpp"
 
 
 IO::IO(const std::string &file_path) {

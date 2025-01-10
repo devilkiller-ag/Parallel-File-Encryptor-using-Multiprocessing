@@ -2,8 +2,8 @@
 #define IO_HPP
 
 
-#include <fstream>
 #include <string>
+#include <fstream>
 
 
 class IO {
