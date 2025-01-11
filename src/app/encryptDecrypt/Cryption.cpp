@@ -1,12 +1,13 @@
 #include <ctime>
 #include <iomanip>
+#include <algorithm>
 
 #include "Cryption.hpp"
 #include "../processes/Task.hpp"
 #include "../fileHandling/ReadEnv.cpp"
 
 
-int executeCryption(const std::string &taskData) {
+int executeCryption(const std::string& taskData) {
     Task task = Task::fromString(taskData);
     ReadEnv env;
 
@@ -37,7 +38,7 @@ int executeCryption(const std::string &taskData) {
 
     std::time_t t = std::time(nullptr);
     std::tm* now = std::localtime(&t);
-    std::cout<<"Exiting the encryption/decryption at: " << std::put_time(now, "%Y-%m-%d %H:%M:%S") << std::endl;
-
+    std::cout << "Exiting the encryption/decryption at: " << std::put_time(now, "%Y-%m-%d %H:%M:%S") << std::endl;
+    
     return 0;
 }

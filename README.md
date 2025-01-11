@@ -1,4 +1,4 @@
-## Parallel File Encryptor
+## Parallel File Encryptor using Multiprocessing in C++
 
 
 ## Prerequisite to run the project

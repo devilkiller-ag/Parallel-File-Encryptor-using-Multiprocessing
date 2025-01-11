@@ -34,7 +34,7 @@ struct Task {
         std::string actionStr;
 
         if(std::getline(iss, filePath, ',') && std::getline(iss, actionStr)) {
-            Action action = actionStr == "ENCRYPT" ? Action::ENCRYPT : Action::DECRYPT;
+            Action action = (actionStr == "ENCRYPT") ? Action::ENCRYPT : Action::DECRYPT;
             IO io(filePath);
             std::fstream f_stream = std::move(io.getFileStream());
 

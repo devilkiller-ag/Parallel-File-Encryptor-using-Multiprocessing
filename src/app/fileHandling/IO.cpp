@@ -1,13 +1,12 @@
-#include <fstream>
 #include <iostream>
 
 #include "IO.hpp"
 
 
-IO::IO(const std::string &file_path) {
+IO::IO(const std::string& file_path) {
     file_stream.open(file_path, std::ios::in | std::ios::out | std::ios::binary);
     if(!file_stream.is_open()) {
-        std::cerr << "Error: Could not open file: " << file_path << std::endl;
+        std::cout << "Unable to open file: " << file_path << std::endl;
     }
 }
 

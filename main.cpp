@@ -14,10 +14,10 @@ int main(int argc, char *argv[]) {
     std::string directory;
     std::string actionStr;
 
-    std::cout<<"Enter the directory path: " << std::endl;
+    std::cout<<"Enter the directory path: ";
     std::getline(std::cin, directory);
 
-    std::cout<<"Enter the action (ENCRYPT/DECRYPT): " << std::endl;
+    std::cout<<"Enter the action (ENCRYPT/DECRYPT): ";
     std::getline(std::cin, actionStr);
 
     try {
@@ -36,6 +36,12 @@ int main(int argc, char *argv[]) {
                         
                         std::time_t t = std::time(nullptr);
                         std::tm* now = std::localtime(&t);
+                        std::cout << "Starting the encryption/decryption at: " << std::put_time(now, "%Y-%m-%d %H:%M:%S") << std::endl;
+                        
+                        if (!task) {
+                            std::cerr << "Failed to create task for file: " << filePath << std::endl;
+                            continue;
+                        }
 
                         ProcessManagement.submitToQueue(std::move(task));
                     } else {
