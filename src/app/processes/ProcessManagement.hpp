@@ -27,7 +27,7 @@ private:
     struct SharedMemory {
         // Use this Shared Memory as a queue.
         std::atomic<int> size;
-        char tasks[1000][256]; // 1000 (SHAREDMEM_CAPACITY) tasks, each task is 256 bytes long.
+        char tasks[SHAREDMEM_CAPACITY][256]; // 1000 (SHAREDMEM_CAPACITY) tasks, each task is 256 bytes long.
         int front;
         int rear;
 
