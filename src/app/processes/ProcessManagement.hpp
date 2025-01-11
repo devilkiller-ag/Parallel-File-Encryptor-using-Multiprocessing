@@ -46,7 +46,7 @@ private:
 
     SharedMemory* sharedMem; // Shared Memory Pointer
     int shmFd; // Shared Memory(shm) File Descriptor(fd)
-    const char* SHM_NAME = "/my_queue"; // Shared Memory(SHM) Name
+    const char* SHM_NAME = "/taskQueue"; // Shared Memory(SHM) Name
 
     std::mutex queueLock;
 };
